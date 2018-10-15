@@ -1,0 +1,4 @@
+2018/10/15 21:40:55.031911 [0;36m[INFO ][m GID 1, Config init success
+2018/10/15 21:40:55.451612 [0;36m[INFO ][m GID 1, Using account:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ
+2018/10/15 21:40:55.451664 [0;36m[INFO ][m GID 1, Account init success
+2018/10/15 21:40:55.451820 [0;31m[ERROR][m GID 1, NewLedger error:NewLedgerStore error NewBlockStore error resource temporarily unavailable

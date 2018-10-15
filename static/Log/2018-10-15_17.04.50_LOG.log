@@ -1,0 +1,40 @@
+2018/10/15 17:04:50.843693 [0;36m[INFO ][m GID 1, Config init success
+2018/10/15 17:04:51.268063 [0;36m[INFO ][m GID 1, Using account:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ
+2018/10/15 17:04:51.268112 [0;36m[INFO ][m GID 1, Account init success
+2018/10/15 17:04:51.283973 [0;36m[INFO ][m GID 1, InitCurrentBlock currentBlockHash b92c1de34e1b5ca8135bc323673c25ae5f99d642b934f84bc0cd18ef32d36875 currentBlockHeight 1285
+2018/10/15 17:04:51.293452 [0;36m[INFO ][m GID 1, Ledger init success
+2018/10/15 17:04:51.294384 [0;36m[INFO ][m GID 1, tx pool: the current local gas price is 0
+2018/10/15 17:04:51.295035 [0;36m[INFO ][m GID 1, TxPool init success
+2018/10/15 17:04:51.295130 [0;36m[INFO ][m GID 66, stateless-validator: started and be ready to receive txn
+2018/10/15 17:04:51.295154 [0;36m[INFO ][m GID 1, ConsensusType:solo
+2018/10/15 17:04:51.295204 [0;36m[INFO ][m GID 67, stateless-validator: started and be ready to receive txn
+2018/10/15 17:04:51.295219 [0;36m[INFO ][m GID 1, Consensus init success
+2018/10/15 17:04:51.295247 [0;36m[INFO ][m GID 15, txpool-verify actor: started and be ready to receive validator's msg
+2018/10/15 17:04:51.295273 [0;36m[INFO ][m GID 65, txpool-tx actor started and be ready to receive tx msg
+2018/10/15 17:04:51.295274 [0;36m[INFO ][m GID 68, stateful-validator: started and be ready to receive txn
+2018/10/15 17:04:51.295342 [0;36m[INFO ][m GID 69, solo actor started
+2018/10/15 17:04:51.295370 [0;36m[INFO ][m GID 16, txpool actor started and be ready to receive txPool msg
+2018/10/15 17:04:51.301130 [0;36m[INFO ][m GID 1, Rpc init success
+2018/10/15 17:04:51.307093 [0;36m[INFO ][m GID 1, Local rpc init success
+2018/10/15 17:04:51.307170 [0;36m[INFO ][m GID 1, Restful init success
+2018/10/15 17:04:51.307259 [0;36m[INFO ][m GID 1, Ws init success
+2018/10/15 17:04:57.296095 [0;36m[INFO ][m GID 118, increment validator block height -1 != ledger block height 1285
+2018/10/15 17:04:57.296196 [0;36m[INFO ][m GID 118, current block height 1285, increment validator block cache range: [0, 0)
+2018/10/15 17:04:57.303285 [0;36m[INFO ][m GID 118, solo actor receives block complete event. block height=1286 txnum=1
+2018/10/15 17:04:57.308079 [0;36m[INFO ][m GID 76, CurrentBlockHeight = 1286
+2018/10/15 17:05:03.296955 [0;36m[INFO ][m GID 40, current block height 1286, increment validator block cache range: [1286, 1287)
+2018/10/15 17:05:03.303196 [0;36m[INFO ][m GID 40, solo actor receives block complete event. block height=1287 txnum=0
+2018/10/15 17:05:03.308388 [0;36m[INFO ][m GID 76, CurrentBlockHeight = 1287
+2018/10/15 17:05:09.295936 [0;36m[INFO ][m GID 89, current block height 1287, increment validator block cache range: [1286, 1288)
+2018/10/15 17:05:09.302661 [0;36m[INFO ][m GID 89, solo actor receives block complete event. block height=1288 txnum=0
+2018/10/15 17:05:09.308030 [0;36m[INFO ][m GID 76, CurrentBlockHeight = 1288
+2018/10/15 17:05:15.297074 [0;36m[INFO ][m GID 27, current block height 1288, increment validator block cache range: [1286, 1289)
+2018/10/15 17:05:15.303419 [0;36m[INFO ][m GID 27, solo actor receives block complete event. block height=1289 txnum=0
+2018/10/15 17:05:15.307987 [0;36m[INFO ][m GID 76, CurrentBlockHeight = 1289
+2018/10/15 17:05:21.295970 [0;36m[INFO ][m GID 32, current block height 1289, increment validator block cache range: [1286, 1290)
+2018/10/15 17:05:21.301906 [0;36m[INFO ][m GID 32, solo actor receives block complete event. block height=1290 txnum=0
+2018/10/15 17:05:21.308108 [0;36m[INFO ][m GID 76, CurrentBlockHeight = 1290
+2018/10/15 17:05:27.296078 [0;36m[INFO ][m GID 93, current block height 1290, increment validator block cache range: [1286, 1291)
+2018/10/15 17:05:27.303617 [0;36m[INFO ][m GID 93, solo actor receives block complete event. block height=1291 txnum=0
+2018/10/15 17:05:27.308345 [0;36m[INFO ][m GID 76, CurrentBlockHeight = 1291
+2018/10/15 17:05:33.296179 [0;36m[INFO ][m GID 133, current block height 1291, increment validator block cache range: [1286, 1292)

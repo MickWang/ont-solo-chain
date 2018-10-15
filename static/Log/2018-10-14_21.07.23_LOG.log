@@ -1,0 +1,371 @@
+2018/10/14 21:07:23.611911 [0;36m[INFO ][m GID 1, Config init success
+2018/10/14 21:07:24.496929 [0;36m[INFO ][m GID 1, Using account:AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ
+2018/10/14 21:07:24.496978 [0;36m[INFO ][m GID 1, Account init success
+2018/10/14 21:07:24.517486 [0;36m[INFO ][m GID 1, deploy contract address:0239dcf9b4a46f15c5f23f20d52fac916a0bac0d
+2018/10/14 21:07:24.517632 [0;36m[INFO ][m GID 1, deploy contract address:08b6dcfed2aace9190a44ae34a320e42c04b46ac
+2018/10/14 21:07:24.517685 [0;36m[INFO ][m GID 1, deploy contract address:7a2f84e3b94d20da1a8592116c0103c28c5e457e
+2018/10/14 21:07:24.517732 [0;36m[INFO ][m GID 1, deploy contract address:6815cbe7b4dbad4d2d09ae035141b5254a002f79
+2018/10/14 21:07:24.517777 [0;36m[INFO ][m GID 1, deploy contract address:24a15c6aed092dfaa711c4974caf1e9d307bf4b5
+2018/10/14 21:07:24.517827 [0;36m[INFO ][m GID 1, deploy contract address:4d6934f0a524a084bb20cff4cdbea236760bb4a3
+2018/10/14 21:07:24.520213 [0;36m[INFO ][m GID 1, GenesisBlock init success. GenesisBlock hash:3aac005b70c1e94fcdd3d8fdb25f6e24f57962832164b3ad941ee979b353e67a
+
+2018/10/14 21:07:24.520280 [0;36m[INFO ][m GID 1, Ledger init success
+2018/10/14 21:07:24.520983 [0;36m[INFO ][m GID 1, tx pool: the current local gas price is 0
+2018/10/14 21:07:24.521619 [0;36m[INFO ][m GID 1, TxPool init success
+2018/10/14 21:07:24.521772 [0;36m[INFO ][m GID 76, stateless-validator: started and be ready to receive txn
+2018/10/14 21:07:24.521807 [0;36m[INFO ][m GID 74, txpool actor started and be ready to receive txPool msg
+2018/10/14 21:07:24.521833 [0;36m[INFO ][m GID 75, txpool-tx actor started and be ready to receive tx msg
+2018/10/14 21:07:24.521852 [0;36m[INFO ][m GID 1, ConsensusType:solo
+2018/10/14 21:07:24.521880 [0;36m[INFO ][m GID 78, stateful-validator: started and be ready to receive txn
+2018/10/14 21:07:24.521906 [0;36m[INFO ][m GID 1, Consensus init success
+2018/10/14 21:07:24.521813 [0;36m[INFO ][m GID 73, txpool-verify actor: started and be ready to receive validator's msg
+2018/10/14 21:07:24.521850 [0;36m[INFO ][m GID 77, stateless-validator: started and be ready to receive txn
+2018/10/14 21:07:24.521881 [0;36m[INFO ][m GID 79, solo actor started
+2018/10/14 21:07:24.527836 [0;36m[INFO ][m GID 1, Rpc init success
+2018/10/14 21:07:24.533201 [0;36m[INFO ][m GID 1, Local rpc init success
+2018/10/14 21:07:24.533288 [0;36m[INFO ][m GID 1, Restful init success
+2018/10/14 21:07:24.533384 [0;36m[INFO ][m GID 1, Ws init success
+2018/10/14 21:07:30.523068 [0;36m[INFO ][m GID 105, increment validator block height -1 != ledger block height 0
+2018/10/14 21:07:30.523218 [0;36m[INFO ][m GID 105, current block height 0, increment validator block cache range: [0, 0)
+2018/10/14 21:07:30.530371 [0;36m[INFO ][m GID 105, solo actor receives block complete event. block height=1 txnum=0
+2018/10/14 21:07:30.533339 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 1
+2018/10/14 21:07:36.522400 [0;36m[INFO ][m GID 111, current block height 1, increment validator block cache range: [1, 2)
+2018/10/14 21:07:36.524067 [0;36m[INFO ][m GID 111, solo actor receives block complete event. block height=2 txnum=0
+2018/10/14 21:07:36.533000 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 2
+2018/10/14 21:07:42.521900 [0;36m[INFO ][m GID 131, current block height 2, increment validator block cache range: [1, 3)
+2018/10/14 21:07:42.523670 [0;36m[INFO ][m GID 131, solo actor receives block complete event. block height=3 txnum=0
+2018/10/14 21:07:42.533671 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 3
+2018/10/14 21:07:48.521109 [0;36m[INFO ][m GID 84, current block height 3, increment validator block cache range: [1, 4)
+2018/10/14 21:07:48.521871 [0;36m[INFO ][m GID 84, solo actor receives block complete event. block height=4 txnum=0
+2018/10/14 21:07:48.533566 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 4
+2018/10/14 21:07:54.521397 [0;36m[INFO ][m GID 35, current block height 4, increment validator block cache range: [1, 5)
+2018/10/14 21:07:54.524747 [0;36m[INFO ][m GID 35, solo actor receives block complete event. block height=5 txnum=0
+2018/10/14 21:07:54.533258 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 5
+2018/10/14 21:08:00.520681 [0;36m[INFO ][m GID 88, current block height 5, increment validator block cache range: [1, 6)
+2018/10/14 21:08:00.522009 [0;36m[INFO ][m GID 88, solo actor receives block complete event. block height=6 txnum=0
+2018/10/14 21:08:00.532761 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 6
+2018/10/14 21:08:06.520474 [0;36m[INFO ][m GID 119, current block height 6, increment validator block cache range: [1, 7)
+2018/10/14 21:08:06.523504 [0;36m[INFO ][m GID 119, solo actor receives block complete event. block height=7 txnum=0
+2018/10/14 21:08:06.532231 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 7
+2018/10/14 21:08:12.520958 [0;36m[INFO ][m GID 42, current block height 7, increment validator block cache range: [1, 8)
+2018/10/14 21:08:12.528403 [0;36m[INFO ][m GID 42, solo actor receives block complete event. block height=8 txnum=0
+2018/10/14 21:08:12.532336 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 8
+2018/10/14 21:08:18.520594 [0;36m[INFO ][m GID 125, current block height 8, increment validator block cache range: [1, 9)
+2018/10/14 21:08:18.527518 [0;36m[INFO ][m GID 125, solo actor receives block complete event. block height=9 txnum=0
+2018/10/14 21:08:18.531030 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 9
+2018/10/14 21:08:24.519906 [0;36m[INFO ][m GID 89, current block height 9, increment validator block cache range: [1, 10)
+2018/10/14 21:08:24.527521 [0;36m[INFO ][m GID 89, solo actor receives block complete event. block height=10 txnum=0
+2018/10/14 21:08:24.531697 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 10
+2018/10/14 21:08:30.518826 [0;36m[INFO ][m GID 146, current block height 10, increment validator block cache range: [1, 11)
+2018/10/14 21:08:30.521567 [0;36m[INFO ][m GID 146, solo actor receives block complete event. block height=11 txnum=0
+2018/10/14 21:08:30.531209 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 11
+2018/10/14 21:08:36.519707 [0;36m[INFO ][m GID 93, current block height 11, increment validator block cache range: [2, 12)
+2018/10/14 21:08:36.526222 [0;36m[INFO ][m GID 93, solo actor receives block complete event. block height=12 txnum=0
+2018/10/14 21:08:36.531090 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 12
+2018/10/14 21:08:42.519192 [0;36m[INFO ][m GID 150, current block height 12, increment validator block cache range: [3, 13)
+2018/10/14 21:08:42.521402 [0;36m[INFO ][m GID 150, solo actor receives block complete event. block height=13 txnum=0
+2018/10/14 21:08:42.529566 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 13
+2018/10/14 21:08:48.530880 [0;36m[INFO ][m GID 161, current block height 13, increment validator block cache range: [4, 14)
+2018/10/14 21:08:48.537241 [0;36m[INFO ][m GID 161, solo actor receives block complete event. block height=14 txnum=0
+2018/10/14 21:08:48.542881 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 14
+2018/10/14 21:08:54.542431 [0;36m[INFO ][m GID 166, current block height 14, increment validator block cache range: [5, 15)
+2018/10/14 21:08:54.548784 [0;36m[INFO ][m GID 166, solo actor receives block complete event. block height=15 txnum=0
+2018/10/14 21:08:54.554025 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 15
+2018/10/14 21:09:00.549314 [0;36m[INFO ][m GID 170, current block height 15, increment validator block cache range: [6, 16)
+2018/10/14 21:09:00.549954 [0;36m[INFO ][m GID 170, solo actor receives block complete event. block height=16 txnum=0
+2018/10/14 21:09:00.560952 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 16
+2018/10/14 21:09:06.555472 [0;36m[INFO ][m GID 22, current block height 16, increment validator block cache range: [7, 17)
+2018/10/14 21:09:06.561981 [0;36m[INFO ][m GID 22, solo actor receives block complete event. block height=17 txnum=0
+2018/10/14 21:09:06.565808 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 17
+2018/10/14 21:09:12.558812 [0;36m[INFO ][m GID 58, current block height 17, increment validator block cache range: [8, 18)
+2018/10/14 21:09:12.566293 [0;36m[INFO ][m GID 58, solo actor receives block complete event. block height=18 txnum=0
+2018/10/14 21:09:12.569351 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 18
+2018/10/14 21:09:18.561035 [0;36m[INFO ][m GID 62, current block height 18, increment validator block cache range: [9, 19)
+2018/10/14 21:09:18.568638 [0;36m[INFO ][m GID 62, solo actor receives block complete event. block height=19 txnum=0
+2018/10/14 21:09:18.572436 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 19
+2018/10/14 21:09:24.561857 [0;36m[INFO ][m GID 176, current block height 19, increment validator block cache range: [10, 20)
+2018/10/14 21:09:24.564935 [0;36m[INFO ][m GID 176, solo actor receives block complete event. block height=20 txnum=0
+2018/10/14 21:09:24.573666 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 20
+2018/10/14 21:09:30.563424 [0;36m[INFO ][m GID 27, current block height 20, increment validator block cache range: [11, 21)
+2018/10/14 21:09:30.571159 [0;36m[INFO ][m GID 27, solo actor receives block complete event. block height=21 txnum=0
+2018/10/14 21:09:30.574000 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 21
+2018/10/14 21:09:36.564078 [0;36m[INFO ][m GID 135, current block height 21, increment validator block cache range: [12, 22)
+2018/10/14 21:09:36.566374 [0;36m[INFO ][m GID 135, solo actor receives block complete event. block height=22 txnum=0
+2018/10/14 21:09:36.575370 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 22
+2018/10/14 21:09:42.564319 [0;36m[INFO ][m GID 140, current block height 22, increment validator block cache range: [13, 23)
+2018/10/14 21:09:42.571959 [0;36m[INFO ][m GID 140, solo actor receives block complete event. block height=23 txnum=0
+2018/10/14 21:09:42.575690 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 23
+2018/10/14 21:09:48.564350 [0;36m[INFO ][m GID 209, current block height 23, increment validator block cache range: [14, 24)
+2018/10/14 21:09:48.565716 [0;36m[INFO ][m GID 209, solo actor receives block complete event. block height=24 txnum=0
+2018/10/14 21:09:48.574858 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 24
+2018/10/14 21:09:54.563871 [0;36m[INFO ][m GID 225, current block height 24, increment validator block cache range: [15, 25)
+2018/10/14 21:09:54.569754 [0;36m[INFO ][m GID 225, solo actor receives block complete event. block height=25 txnum=0
+2018/10/14 21:09:54.575664 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 25
+2018/10/14 21:10:00.563417 [0;36m[INFO ][m GID 197, current block height 25, increment validator block cache range: [16, 26)
+2018/10/14 21:10:00.565257 [0;36m[INFO ][m GID 197, solo actor receives block complete event. block height=26 txnum=0
+2018/10/14 21:10:00.575442 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 26
+2018/10/14 21:10:06.563405 [0;36m[INFO ][m GID 178, current block height 26, increment validator block cache range: [17, 27)
+2018/10/14 21:10:06.570691 [0;36m[INFO ][m GID 178, solo actor receives block complete event. block height=27 txnum=0
+2018/10/14 21:10:06.575015 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 27
+2018/10/14 21:10:12.564051 [0;36m[INFO ][m GID 231, current block height 27, increment validator block cache range: [18, 28)
+2018/10/14 21:10:12.565997 [0;36m[INFO ][m GID 231, solo actor receives block complete event. block height=28 txnum=0
+2018/10/14 21:10:12.575578 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 28
+2018/10/14 21:10:18.564009 [0;36m[INFO ][m GID 182, current block height 28, increment validator block cache range: [19, 29)
+2018/10/14 21:10:18.570152 [0;36m[INFO ][m GID 182, solo actor receives block complete event. block height=29 txnum=0
+2018/10/14 21:10:18.575495 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 29
+2018/10/14 21:10:24.563568 [0;36m[INFO ][m GID 186, current block height 29, increment validator block cache range: [20, 30)
+2018/10/14 21:10:24.567464 [0;36m[INFO ][m GID 186, solo actor receives block complete event. block height=30 txnum=0
+2018/10/14 21:10:24.574871 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 30
+2018/10/14 21:10:30.562859 [0;36m[INFO ][m GID 235, current block height 30, increment validator block cache range: [21, 31)
+2018/10/14 21:10:30.569227 [0;36m[INFO ][m GID 235, solo actor receives block complete event. block height=31 txnum=0
+2018/10/14 21:10:30.575237 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 31
+2018/10/14 21:10:36.563484 [0;36m[INFO ][m GID 191, current block height 31, increment validator block cache range: [22, 32)
+2018/10/14 21:10:36.569285 [0;36m[INFO ][m GID 191, solo actor receives block complete event. block height=32 txnum=0
+2018/10/14 21:10:36.574820 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 32
+2018/10/14 21:10:42.562517 [0;36m[INFO ][m GID 244, current block height 32, increment validator block cache range: [23, 33)
+2018/10/14 21:10:42.566050 [0;36m[INFO ][m GID 244, solo actor receives block complete event. block height=33 txnum=0
+2018/10/14 21:10:42.574856 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 33
+2018/10/14 21:10:48.562807 [0;36m[INFO ][m GID 246, current block height 33, increment validator block cache range: [24, 34)
+2018/10/14 21:10:48.566293 [0;36m[INFO ][m GID 246, solo actor receives block complete event. block height=34 txnum=0
+2018/10/14 21:10:48.574700 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 34
+2018/10/14 21:10:54.562087 [0;36m[INFO ][m GID 259, current block height 34, increment validator block cache range: [25, 35)
+2018/10/14 21:10:54.569432 [0;36m[INFO ][m GID 259, solo actor receives block complete event. block height=35 txnum=0
+2018/10/14 21:10:54.574797 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 35
+2018/10/14 21:11:00.562390 [0;36m[INFO ][m GID 263, current block height 35, increment validator block cache range: [26, 36)
+2018/10/14 21:11:00.564098 [0;36m[INFO ][m GID 263, solo actor receives block complete event. block height=36 txnum=0
+2018/10/14 21:11:00.573217 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 36
+2018/10/14 21:11:06.561870 [0;36m[INFO ][m GID 252, current block height 36, increment validator block cache range: [27, 37)
+2018/10/14 21:11:06.563333 [0;36m[INFO ][m GID 252, solo actor receives block complete event. block height=37 txnum=0
+2018/10/14 21:11:06.573257 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 37
+2018/10/14 21:11:12.562507 [0;36m[INFO ][m GID 268, current block height 37, increment validator block cache range: [28, 38)
+2018/10/14 21:11:12.565971 [0;36m[INFO ][m GID 268, solo actor receives block complete event. block height=38 txnum=0
+2018/10/14 21:11:12.573753 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 38
+2018/10/14 21:11:18.561754 [0;36m[INFO ][m GID 238, current block height 38, increment validator block cache range: [29, 39)
+2018/10/14 21:11:18.568368 [0;36m[INFO ][m GID 238, solo actor receives block complete event. block height=39 txnum=0
+2018/10/14 21:11:18.573565 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 39
+2018/10/14 21:11:24.561578 [0;36m[INFO ][m GID 289, current block height 39, increment validator block cache range: [30, 40)
+2018/10/14 21:11:24.568817 [0;36m[INFO ][m GID 289, solo actor receives block complete event. block height=40 txnum=0
+2018/10/14 21:11:24.572369 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 40
+2018/10/14 21:11:30.561975 [0;36m[INFO ][m GID 276, current block height 40, increment validator block cache range: [31, 41)
+2018/10/14 21:11:30.569788 [0;36m[INFO ][m GID 276, solo actor receives block complete event. block height=41 txnum=0
+2018/10/14 21:11:30.573334 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 41
+2018/10/14 21:11:36.561326 [0;36m[INFO ][m GID 294, current block height 41, increment validator block cache range: [32, 42)
+2018/10/14 21:11:36.567923 [0;36m[INFO ][m GID 294, solo actor receives block complete event. block height=42 txnum=0
+2018/10/14 21:11:36.572928 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 42
+2018/10/14 21:11:42.560398 [0;36m[INFO ][m GID 272, current block height 42, increment validator block cache range: [33, 43)
+2018/10/14 21:11:42.568145 [0;36m[INFO ][m GID 272, solo actor receives block complete event. block height=43 txnum=0
+2018/10/14 21:11:42.572740 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 43
+2018/10/14 21:11:48.560448 [0;36m[INFO ][m GID 308, current block height 43, increment validator block cache range: [34, 44)
+2018/10/14 21:11:48.567085 [0;36m[INFO ][m GID 308, solo actor receives block complete event. block height=44 txnum=0
+2018/10/14 21:11:48.571978 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 44
+2018/10/14 21:11:54.560138 [0;36m[INFO ][m GID 300, current block height 44, increment validator block cache range: [35, 45)
+2018/10/14 21:11:54.564863 [0;36m[INFO ][m GID 300, solo actor receives block complete event. block height=45 txnum=0
+2018/10/14 21:11:54.571831 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 45
+2018/10/14 21:12:00.560130 [0;36m[INFO ][m GID 313, current block height 45, increment validator block cache range: [36, 46)
+2018/10/14 21:12:00.562367 [0;36m[INFO ][m GID 313, solo actor receives block complete event. block height=46 txnum=0
+2018/10/14 21:12:00.572234 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 46
+2018/10/14 21:12:06.560849 [0;36m[INFO ][m GID 321, current block height 46, increment validator block cache range: [37, 47)
+2018/10/14 21:12:06.567567 [0;36m[INFO ][m GID 321, solo actor receives block complete event. block height=47 txnum=0
+2018/10/14 21:12:06.572206 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 47
+2018/10/14 21:12:12.559761 [0;36m[INFO ][m GID 318, current block height 47, increment validator block cache range: [38, 48)
+2018/10/14 21:12:12.561854 [0;36m[INFO ][m GID 318, solo actor receives block complete event. block height=48 txnum=0
+2018/10/14 21:12:12.571998 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 48
+2018/10/14 21:12:18.559459 [0;36m[INFO ][m GID 325, current block height 48, increment validator block cache range: [39, 49)
+2018/10/14 21:12:18.565778 [0;36m[INFO ][m GID 325, solo actor receives block complete event. block height=49 txnum=0
+2018/10/14 21:12:18.571834 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 49
+2018/10/14 21:12:24.559680 [0;36m[INFO ][m GID 339, current block height 49, increment validator block cache range: [40, 50)
+2018/10/14 21:12:24.561229 [0;36m[INFO ][m GID 339, solo actor receives block complete event. block height=50 txnum=0
+2018/10/14 21:12:24.571451 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 50
+2018/10/14 21:12:30.559694 [0;36m[INFO ][m GID 329, current block height 50, increment validator block cache range: [41, 51)
+2018/10/14 21:12:30.566496 [0;36m[INFO ][m GID 329, solo actor receives block complete event. block height=51 txnum=0
+2018/10/14 21:12:30.570481 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 51
+2018/10/14 21:12:36.559662 [0;36m[INFO ][m GID 213, current block height 51, increment validator block cache range: [42, 52)
+2018/10/14 21:12:36.568097 [0;36m[INFO ][m GID 213, solo actor receives block complete event. block height=52 txnum=0
+2018/10/14 21:12:36.570596 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 52
+2018/10/14 21:12:42.559025 [0;36m[INFO ][m GID 344, current block height 52, increment validator block cache range: [43, 53)
+2018/10/14 21:12:42.565806 [0;36m[INFO ][m GID 344, solo actor receives block complete event. block height=53 txnum=0
+2018/10/14 21:12:42.569893 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 53
+2018/10/14 21:12:48.558409 [0;36m[INFO ][m GID 334, current block height 53, increment validator block cache range: [44, 54)
+2018/10/14 21:12:48.564580 [0;36m[INFO ][m GID 334, solo actor receives block complete event. block height=54 txnum=0
+2018/10/14 21:12:48.569669 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 54
+2018/10/14 21:12:54.558613 [0;36m[INFO ][m GID 285, current block height 54, increment validator block cache range: [45, 55)
+2018/10/14 21:12:54.566246 [0;36m[INFO ][m GID 285, solo actor receives block complete event. block height=55 txnum=0
+2018/10/14 21:12:54.570695 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 55
+2018/10/14 21:13:00.558424 [0;36m[INFO ][m GID 219, current block height 55, increment validator block cache range: [46, 56)
+2018/10/14 21:13:00.562603 [0;36m[INFO ][m GID 219, solo actor receives block complete event. block height=56 txnum=0
+2018/10/14 21:13:00.570370 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 56
+2018/10/14 21:13:06.558202 [0;36m[INFO ][m GID 223, current block height 56, increment validator block cache range: [47, 57)
+2018/10/14 21:13:06.561408 [0;36m[INFO ][m GID 223, solo actor receives block complete event. block height=57 txnum=0
+2018/10/14 21:13:06.570125 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 57
+2018/10/14 21:13:12.557833 [0;36m[INFO ][m GID 388, current block height 57, increment validator block cache range: [48, 58)
+2018/10/14 21:13:12.564226 [0;36m[INFO ][m GID 388, solo actor receives block complete event. block height=58 txnum=0
+2018/10/14 21:13:12.569568 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 58
+2018/10/14 21:13:18.557677 [0;36m[INFO ][m GID 208, current block height 58, increment validator block cache range: [49, 59)
+2018/10/14 21:13:18.565673 [0;36m[INFO ][m GID 208, solo actor receives block complete event. block height=59 txnum=0
+2018/10/14 21:13:18.568782 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 59
+2018/10/14 21:13:24.557919 [0;36m[INFO ][m GID 404, current block height 59, increment validator block cache range: [50, 60)
+2018/10/14 21:13:24.565254 [0;36m[INFO ][m GID 404, solo actor receives block complete event. block height=60 txnum=0
+2018/10/14 21:13:24.569726 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 60
+2018/10/14 21:13:30.558233 [0;36m[INFO ][m GID 409, current block height 60, increment validator block cache range: [51, 61)
+2018/10/14 21:13:30.565904 [0;36m[INFO ][m GID 409, solo actor receives block complete event. block height=61 txnum=0
+2018/10/14 21:13:30.569555 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 61
+2018/10/14 21:13:36.557907 [0;36m[INFO ][m GID 392, current block height 61, increment validator block cache range: [52, 62)
+2018/10/14 21:13:36.563710 [0;36m[INFO ][m GID 392, solo actor receives block complete event. block height=62 txnum=0
+2018/10/14 21:13:36.569058 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 62
+2018/10/14 21:13:42.557578 [0;36m[INFO ][m GID 372, current block height 62, increment validator block cache range: [53, 63)
+2018/10/14 21:13:42.560222 [0;36m[INFO ][m GID 372, solo actor receives block complete event. block height=63 txnum=0
+2018/10/14 21:13:42.567979 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 63
+2018/10/14 21:13:48.557611 [0;36m[INFO ][m GID 376, current block height 63, increment validator block cache range: [54, 64)
+2018/10/14 21:13:48.564147 [0;36m[INFO ][m GID 376, solo actor receives block complete event. block height=64 txnum=0
+2018/10/14 21:13:48.568977 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 64
+2018/10/14 21:13:54.557073 [0;36m[INFO ][m GID 397, current block height 64, increment validator block cache range: [55, 65)
+2018/10/14 21:13:54.565359 [0;36m[INFO ][m GID 397, solo actor receives block complete event. block height=65 txnum=0
+2018/10/14 21:13:54.568792 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 65
+2018/10/14 21:14:00.555975 [0;36m[INFO ][m GID 380, current block height 65, increment validator block cache range: [56, 66)
+2018/10/14 21:14:00.557848 [0;36m[INFO ][m GID 380, solo actor receives block complete event. block height=66 txnum=0
+2018/10/14 21:14:00.567413 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 66
+2018/10/14 21:14:06.556597 [0;36m[INFO ][m GID 355, current block height 66, increment validator block cache range: [57, 67)
+2018/10/14 21:14:06.558338 [0;36m[INFO ][m GID 355, solo actor receives block complete event. block height=67 txnum=0
+2018/10/14 21:14:06.568077 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 67
+2018/10/14 21:14:12.556743 [0;36m[INFO ][m GID 417, current block height 67, increment validator block cache range: [58, 68)
+2018/10/14 21:14:12.564124 [0;36m[INFO ][m GID 417, solo actor receives block complete event. block height=68 txnum=0
+2018/10/14 21:14:12.567421 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 68
+2018/10/14 21:14:18.555682 [0;36m[INFO ][m GID 360, current block height 68, increment validator block cache range: [59, 69)
+2018/10/14 21:14:18.557563 [0;36m[INFO ][m GID 360, solo actor receives block complete event. block height=69 txnum=0
+2018/10/14 21:14:18.566953 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 69
+2018/10/14 21:14:24.555842 [0;36m[INFO ][m GID 365, current block height 69, increment validator block cache range: [60, 70)
+2018/10/14 21:14:24.562430 [0;36m[INFO ][m GID 365, solo actor receives block complete event. block height=70 txnum=0
+2018/10/14 21:14:24.567628 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 70
+2018/10/14 21:14:30.555088 [0;36m[INFO ][m GID 435, current block height 70, increment validator block cache range: [61, 71)
+2018/10/14 21:14:30.560883 [0;36m[INFO ][m GID 435, solo actor receives block complete event. block height=71 txnum=0
+2018/10/14 21:14:30.567655 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 71
+2018/10/14 21:14:36.556073 [0;36m[INFO ][m GID 440, current block height 71, increment validator block cache range: [62, 72)
+2018/10/14 21:14:36.562558 [0;36m[INFO ][m GID 440, solo actor receives block complete event. block height=72 txnum=0
+2018/10/14 21:14:36.567422 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 72
+2018/10/14 21:14:42.554693 [0;36m[INFO ][m GID 454, current block height 72, increment validator block cache range: [63, 73)
+2018/10/14 21:14:42.562118 [0;36m[INFO ][m GID 454, solo actor receives block complete event. block height=73 txnum=0
+2018/10/14 21:14:42.566132 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 73
+2018/10/14 21:14:48.555763 [0;36m[INFO ][m GID 152, current block height 73, increment validator block cache range: [64, 74)
+2018/10/14 21:14:48.562241 [0;36m[INFO ][m GID 152, solo actor receives block complete event. block height=74 txnum=0
+2018/10/14 21:14:48.567110 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 74
+2018/10/14 21:14:54.555098 [0;36m[INFO ][m GID 157, current block height 74, increment validator block cache range: [65, 75)
+2018/10/14 21:14:54.558992 [0;36m[INFO ][m GID 157, solo actor receives block complete event. block height=75 txnum=0
+2018/10/14 21:14:54.565818 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 75
+2018/10/14 21:15:00.555303 [0;36m[INFO ][m GID 481, current block height 75, increment validator block cache range: [66, 76)
+2018/10/14 21:15:00.556642 [0;36m[INFO ][m GID 481, solo actor receives block complete event. block height=76 txnum=0
+2018/10/14 21:15:00.566758 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 76
+2018/10/14 21:15:06.554802 [0;36m[INFO ][m GID 467, current block height 76, increment validator block cache range: [67, 77)
+2018/10/14 21:15:06.561763 [0;36m[INFO ][m GID 467, solo actor receives block complete event. block height=77 txnum=0
+2018/10/14 21:15:06.565596 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 77
+2018/10/14 21:15:12.554951 [0;36m[INFO ][m GID 486, current block height 77, increment validator block cache range: [68, 78)
+2018/10/14 21:15:12.562467 [0;36m[INFO ][m GID 486, solo actor receives block complete event. block height=78 txnum=0
+2018/10/14 21:15:12.566341 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 78
+2018/10/14 21:15:18.554771 [0;36m[INFO ][m GID 472, current block height 78, increment validator block cache range: [69, 79)
+2018/10/14 21:15:18.561184 [0;36m[INFO ][m GID 472, solo actor receives block complete event. block height=79 txnum=0
+2018/10/14 21:15:18.566132 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 79
+2018/10/14 21:15:24.554154 [0;36m[INFO ][m GID 490, current block height 79, increment validator block cache range: [70, 80)
+2018/10/14 21:15:24.562328 [0;36m[INFO ][m GID 490, solo actor receives block complete event. block height=80 txnum=0
+2018/10/14 21:15:24.564944 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 80
+2018/10/14 21:15:30.553460 [0;36m[INFO ][m GID 444, current block height 80, increment validator block cache range: [71, 81)
+2018/10/14 21:15:30.560049 [0;36m[INFO ][m GID 444, solo actor receives block complete event. block height=81 txnum=0
+2018/10/14 21:15:30.565639 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 81
+2018/10/14 21:15:36.554209 [0;36m[INFO ][m GID 495, current block height 81, increment validator block cache range: [72, 82)
+2018/10/14 21:15:36.563448 [0;36m[INFO ][m GID 495, solo actor receives block complete event. block height=82 txnum=0
+2018/10/14 21:15:36.564389 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 82
+2018/10/14 21:15:42.553839 [0;36m[INFO ][m GID 499, current block height 82, increment validator block cache range: [73, 83)
+2018/10/14 21:15:42.561594 [0;36m[INFO ][m GID 499, solo actor receives block complete event. block height=83 txnum=0
+2018/10/14 21:15:42.564176 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 83
+2018/10/14 21:15:48.553562 [0;36m[INFO ][m GID 459, current block height 83, increment validator block cache range: [74, 84)
+2018/10/14 21:15:48.555813 [0;36m[INFO ][m GID 459, solo actor receives block complete event. block height=84 txnum=0
+2018/10/14 21:15:48.564984 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 84
+2018/10/14 21:15:54.552989 [0;36m[INFO ][m GID 463, current block height 84, increment validator block cache range: [75, 85)
+2018/10/14 21:15:54.557330 [0;36m[INFO ][m GID 463, solo actor receives block complete event. block height=85 txnum=0
+2018/10/14 21:15:54.564737 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 85
+2018/10/14 21:16:00.552546 [0;36m[INFO ][m GID 515, current block height 85, increment validator block cache range: [76, 86)
+2018/10/14 21:16:00.554150 [0;36m[INFO ][m GID 515, solo actor receives block complete event. block height=86 txnum=0
+2018/10/14 21:16:00.564595 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 86
+2018/10/14 21:16:06.553252 [0;36m[INFO ][m GID 519, current block height 86, increment validator block cache range: [77, 87)
+2018/10/14 21:16:06.558159 [0;36m[INFO ][m GID 519, solo actor receives block complete event. block height=87 txnum=0
+2018/10/14 21:16:06.564632 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 87
+2018/10/14 21:16:12.552856 [0;36m[INFO ][m GID 506, current block height 87, increment validator block cache range: [78, 88)
+2018/10/14 21:16:12.560540 [0;36m[INFO ][m GID 506, solo actor receives block complete event. block height=88 txnum=0
+2018/10/14 21:16:12.564243 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 88
+2018/10/14 21:16:18.552298 [0;36m[INFO ][m GID 478, current block height 88, increment validator block cache range: [79, 89)
+2018/10/14 21:16:18.558965 [0;36m[INFO ][m GID 478, solo actor receives block complete event. block height=89 txnum=0
+2018/10/14 21:16:18.564068 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 89
+2018/10/14 21:16:24.552193 [0;36m[INFO ][m GID 525, current block height 89, increment validator block cache range: [80, 90)
+2018/10/14 21:16:24.559517 [0;36m[INFO ][m GID 525, solo actor receives block complete event. block height=90 txnum=0
+2018/10/14 21:16:24.564054 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 90
+2018/10/14 21:16:30.552501 [0;36m[INFO ][m GID 547, current block height 90, increment validator block cache range: [81, 91)
+2018/10/14 21:16:30.558997 [0;36m[INFO ][m GID 547, solo actor receives block complete event. block height=91 txnum=0
+2018/10/14 21:16:30.563845 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 91
+2018/10/14 21:16:36.552111 [0;36m[INFO ][m GID 551, current block height 91, increment validator block cache range: [82, 92)
+2018/10/14 21:16:36.557832 [0;36m[INFO ][m GID 551, solo actor receives block complete event. block height=92 txnum=0
+2018/10/14 21:16:36.563032 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 92
+2018/10/14 21:16:42.551403 [0;36m[INFO ][m GID 555, current block height 92, increment validator block cache range: [83, 93)
+2018/10/14 21:16:42.560640 [0;36m[INFO ][m GID 555, solo actor receives block complete event. block height=93 txnum=0
+2018/10/14 21:16:42.562591 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 93
+2018/10/14 21:16:48.551390 [0;36m[INFO ][m GID 559, current block height 93, increment validator block cache range: [84, 94)
+2018/10/14 21:16:48.558190 [0;36m[INFO ][m GID 559, solo actor receives block complete event. block height=94 txnum=0
+2018/10/14 21:16:48.562389 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 94
+2018/10/14 21:16:54.550876 [0;36m[INFO ][m GID 511, current block height 94, increment validator block cache range: [85, 95)
+2018/10/14 21:16:54.558387 [0;36m[INFO ][m GID 511, solo actor receives block complete event. block height=95 txnum=0
+2018/10/14 21:16:54.564456 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 95
+2018/10/14 21:17:00.551556 [0;36m[INFO ][m GID 581, current block height 95, increment validator block cache range: [86, 96)
+2018/10/14 21:17:00.552903 [0;36m[INFO ][m GID 581, solo actor receives block complete event. block height=96 txnum=0
+2018/10/14 21:17:00.562816 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 96
+2018/10/14 21:17:06.550615 [0;36m[INFO ][m GID 585, current block height 96, increment validator block cache range: [87, 97)
+2018/10/14 21:17:06.557743 [0;36m[INFO ][m GID 585, solo actor receives block complete event. block height=97 txnum=0
+2018/10/14 21:17:06.562705 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 97
+2018/10/14 21:17:12.551172 [0;36m[INFO ][m GID 563, current block height 97, increment validator block cache range: [88, 98)
+2018/10/14 21:17:12.558712 [0;36m[INFO ][m GID 563, solo actor receives block complete event. block height=98 txnum=0
+2018/10/14 21:17:12.562508 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 98
+2018/10/14 21:17:18.549807 [0;36m[INFO ][m GID 533, current block height 98, increment validator block cache range: [89, 99)
+2018/10/14 21:17:18.553394 [0;36m[INFO ][m GID 533, solo actor receives block complete event. block height=99 txnum=0
+2018/10/14 21:17:18.562162 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 99
+2018/10/14 21:17:24.550363 [0;36m[INFO ][m GID 590, current block height 99, increment validator block cache range: [90, 100)
+2018/10/14 21:17:24.557537 [0;36m[INFO ][m GID 590, solo actor receives block complete event. block height=100 txnum=0
+2018/10/14 21:17:24.561028 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 100
+2018/10/14 21:17:30.550206 [0;36m[INFO ][m GID 610, current block height 100, increment validator block cache range: [91, 101)
+2018/10/14 21:17:30.556836 [0;36m[INFO ][m GID 610, solo actor receives block complete event. block height=101 txnum=0
+2018/10/14 21:17:30.561738 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 101
+2018/10/14 21:17:36.550510 [0;36m[INFO ][m GID 539, current block height 101, increment validator block cache range: [92, 102)
+2018/10/14 21:17:36.558055 [0;36m[INFO ][m GID 539, solo actor receives block complete event. block height=102 txnum=0
+2018/10/14 21:17:36.561361 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 102
+2018/10/14 21:17:42.549112 [0;36m[INFO ][m GID 543, current block height 102, increment validator block cache range: [93, 103)
+2018/10/14 21:17:42.557038 [0;36m[INFO ][m GID 543, solo actor receives block complete event. block height=103 txnum=0
+2018/10/14 21:17:42.560605 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 103
+2018/10/14 21:17:48.549888 [0;36m[INFO ][m GID 627, current block height 103, increment validator block cache range: [94, 104)
+2018/10/14 21:17:48.556629 [0;36m[INFO ][m GID 627, solo actor receives block complete event. block height=104 txnum=0
+2018/10/14 21:17:48.561229 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 104
+2018/10/14 21:17:54.549858 [0;36m[INFO ][m GID 599, current block height 104, increment validator block cache range: [95, 105)
+2018/10/14 21:17:54.552862 [0;36m[INFO ][m GID 599, solo actor receives block complete event. block height=105 txnum=0
+2018/10/14 21:17:54.560332 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 105
+2018/10/14 21:18:00.548461 [0;36m[INFO ][m GID 631, current block height 105, increment validator block cache range: [96, 106)
+2018/10/14 21:18:00.556269 [0;36m[INFO ][m GID 631, solo actor receives block complete event. block height=106 txnum=0
+2018/10/14 21:18:00.560684 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 106
+2018/10/14 21:18:06.549457 [0;36m[INFO ][m GID 605, current block height 106, increment validator block cache range: [97, 107)
+2018/10/14 21:18:06.551866 [0;36m[INFO ][m GID 605, solo actor receives block complete event. block height=107 txnum=0
+2018/10/14 21:18:06.560842 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 107
+2018/10/14 21:18:12.548798 [0;36m[INFO ][m GID 636, current block height 107, increment validator block cache range: [98, 108)
+2018/10/14 21:18:12.551209 [0;36m[INFO ][m GID 636, solo actor receives block complete event. block height=108 txnum=0
+2018/10/14 21:18:12.560962 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 108
+2018/10/14 21:18:18.549461 [0;36m[INFO ][m GID 641, current block height 108, increment validator block cache range: [99, 109)
+2018/10/14 21:18:18.550724 [0;36m[INFO ][m GID 641, solo actor receives block complete event. block height=109 txnum=0
+2018/10/14 21:18:18.561753 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 109
+2018/10/14 21:18:24.548459 [0;36m[INFO ][m GID 614, current block height 109, increment validator block cache range: [100, 110)
+2018/10/14 21:18:24.554859 [0;36m[INFO ][m GID 614, solo actor receives block complete event. block height=110 txnum=0
+2018/10/14 21:18:24.560250 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 110
+2018/10/14 21:18:30.548661 [0;36m[INFO ][m GID 659, current block height 110, increment validator block cache range: [101, 111)
+2018/10/14 21:18:30.549596 [0;36m[INFO ][m GID 659, solo actor receives block complete event. block height=111 txnum=0
+2018/10/14 21:18:30.559781 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 111
+2018/10/14 21:18:36.549497 [0;36m[INFO ][m GID 646, current block height 111, increment validator block cache range: [102, 112)
+2018/10/14 21:18:36.556636 [0;36m[INFO ][m GID 646, solo actor receives block complete event. block height=112 txnum=0
+2018/10/14 21:18:36.560988 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 112
+2018/10/14 21:18:42.548163 [0;36m[INFO ][m GID 618, current block height 112, increment validator block cache range: [103, 113)
+2018/10/14 21:18:42.556884 [0;36m[INFO ][m GID 618, solo actor receives block complete event. block height=113 txnum=0
+2018/10/14 21:18:42.560577 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 113
+2018/10/14 21:18:48.547735 [0;36m[INFO ][m GID 673, current block height 113, increment validator block cache range: [104, 114)
+2018/10/14 21:18:48.550228 [0;36m[INFO ][m GID 673, solo actor receives block complete event. block height=114 txnum=0
+2018/10/14 21:18:48.559463 [0;36m[INFO ][m GID 102, CurrentBlockHeight = 114
+2018/10/14 21:18:54.547338 [0;36m[INFO ][m GID 681, current block height 114, increment validator block cache range: [105, 115)

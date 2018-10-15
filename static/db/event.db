@@ -1,0 +1,2 @@
+{"height":1,"json":[{"TxHash":"d3de235a6036fed22ac37c2e0c18a2480eca360ca9468257ec2c2a553a25efb2","State":1,"GasConsumed":0,"Notify":[{"ContractAddress":"0100000000000000000000000000000000000000","States":["transfer","AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ","AUr5QUfeBADq6BMY6Tp5yuMsUNGpsD7nLZ",1]}]}],"_id":"rfQyuuHJurJ2Kqwt"}
+{"$$indexCreated":{"fieldName":"hash","unique":true,"sparse":false}}
