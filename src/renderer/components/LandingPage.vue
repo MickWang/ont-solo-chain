@@ -64,6 +64,9 @@
     components:{
       CommonModal
     },
+    mounted(){
+      localStorage.removeItem('Node_PID')
+    },
     data() {
       const node_accunts = JSON.parse(localStorage.getItem('node_accunts')) || []
       const hasChmod = localStorage.getItem('hasChmod') || false;
@@ -135,12 +138,13 @@
         process1.stdin.write('1\n');
       }, 500)
 
-        
-        // localStorage.setItem('Node_PID', newProcess)
         console.log(nodeProcess)
+        localStorage.setItem('Node_PID', nodeProcess.pid)
       },
       stopNode() {
-        nodeProcess.kill()
+        if(localStorage.getItem('Node_PID')) {
+          process.kill(parseInt(localStorage.getItem('Node_PID')))
+        }
       },
       showPrikey(){
         const password = '1' // default
