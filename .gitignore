@@ -8,7 +8,7 @@ npm-debug.log
 npm-debug.log.*
 thumbs.db
 !.gitkeep
-static/Chain/*
-static/Log/*
-static/db/*
+static/Chain/
+static/Log/
+static/db/
 release/
