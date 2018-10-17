@@ -1,30 +1,38 @@
+<style scoped>
+.accounts-balance  p {
+  margin-bottom:0px;
+}
+.accounts-showKey {
+  font-size:20px;
+}
+</style>
+
 <template>
   <div id="wrapper">
-    <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
     <main>
-      <div>
+      <!-- <div>
         <a-button @click="chmodOntology">授权节点</a-button>
         <a-button @click="showPrikey">写入私钥文件</a-button>
         <a-button @click="startNode">启动节点</a-button>
         <a-button @click="stopNode">结束节点</a-button>
         <a-button @click="withdrawONG">提取ONG</a-button>
         <a-button @click="syncBlock">同步区块</a-button>        
-      </div>
-      <div style="margin-top:20px;">
-        <a-button>
-          <router-link class="link-tab" to="/transactions">交易列表</router-link>
-        </a-button>
-        <a-button>
-          <router-link class="link-tab" to="/blocks">区块列表</router-link>
-        </a-button>
-        <a-button>
-          <router-link class="link-tab" to="/events">Event列表</router-link>
-        </a-button>
-        <a-button>
-          <router-link class="link-tab" to="/scs">合约交易列表</router-link>
-        </a-button>
-        
-      </div>
+      </div> -->
+      <a-table :columns="columns"
+                :rowKey="record => record.address"
+                :dataSource="data"
+                :loading="loading"
+            >
+            <div slot="balance" slot-scope="text, record" class="accounts-balance">
+              <p>ONT: {{record.balance.ont}}</p>
+              <p>ONG: {{record.balance.ong}}</p>
+            </div>
+            <div slot="action" slot-scope="text, record" class="accounts-showKey" >
+                <a  href="javascript:;" @click="showPrikey(record)">
+                  <a-icon type="key" />
+                </a>
+            </div>
+            </a-table>
     </main>
   
     <common-modal modalId="modal1" @modalOk="sysPassModalOk">
@@ -59,20 +67,56 @@
   }
   const url = 'http://127.0.0.1:20334'
   const rest = new RestClient(url)
+  const columns = [
+    {
+      title: 'Address',
+      dataIndex: 'address'
+    },
+    {
+      title: 'Balance',
+      dataIndex: 'balance',
+      scopedSlots: {customRender: 'balance'}
+    },
+    {
+      title: '',
+      key: 'action',
+      scopedSlots: {customRender:'action'}
+    }
+  ]
   export default {
     name: 'landing-page',
     components:{
       CommonModal
     },
+    beforeMount(){
+      this.chmodOntology()
+    },
     mounted(){
       localStorage.removeItem('Node_PID')
+      this.loading = false;
+      this.startNode()
+      this.queryBalance()
+    },
+    beforeDestroy(){
+      clearInterval(this.intervalId)
     },
     data() {
-      const node_accunts = JSON.parse(localStorage.getItem('node_accunts')) || []
       const hasChmod = localStorage.getItem('hasChmod') || false;
       const ontologyPath = path.join(__static, '/ontology-darwin-amd64')
+      const accounts = JSON.parse(readFileSync(__static+'/privateKey.json').toString())
+      const data = accounts.map((item)=>{
+        return {
+          ...item,
+          balance:{
+            ont: 0,
+            ong: 0
+          }
+        }
+      })
       return {
-        node_accunts,
+        columns,
+        data,
+        loading:false,
         passModal:false,
         ontologyPath,
         hasChmod,
@@ -84,19 +128,21 @@
         this.$electron.shell.openExternal(link)
       },
       chmodOntology() {
-        // this.$store.commit('SHOW_COMMON_MODAL')
         if(this.hasChmod === 'true') {
-          this.$message.success('已授权。')
+          console.log('已授权。');
+          return;
+        }
+        if(os === 'win32') {
           return;
         }
         const command = 'chmod +x ' + this.ontologyPath
+        
         sudo.exec(command, options, (error, stdout, stderr) => {
           if(error) throw error
           console.log('stdout: ' + stdout)
           localStorage.setItem('hasChmod', true);
-          this.$message.success('授权成功。')
+          console.log('授权成功。')
         })
-
       },
       startNode() {
         let command = '';
@@ -112,7 +158,7 @@
           })
         } else if (os === 'win32') {
           command = 'ontology-windows-amd64.exe'
-          nodeProcess = execFile(commit, ['--rest --ws --localrpc --gaslimit 20000 --gasprice 0 --testmode'],{
+          nodeProcess = execFile(commit, ['--gasprice=0', '--testmode'],{
             cwd: __static
           })
 
@@ -126,6 +172,9 @@
 
         setTimeout(()=>{
           this.syncBlock()
+          this.intervalId = setInterval(()=>{
+            this.syncBlock()
+          },6000)
         }, 1000)
 
       // transfer to itself
@@ -147,28 +196,10 @@
         }
       },
       showPrikey(){
-        const password = '1' // default
-        const walletPath = __static + '/wallet.dat'
-        const walletString = readFileSync(walletPath).toString();
-        const wallet = Wallet.parseJson(walletString)
-        const params = {
-          cost: wallet.scrypt.n,
-          blockSize: wallet.scrypt.r,
-          parallel: wallet.scrypt.p,
-          size: wallet.scrypt.dkLen
-        }
-        const privateKeys = wallet.accounts.length>0 && wallet.accounts.map((a) => {
-          const enc = a.encryptedKey;
-          const pri = enc.decrypt(password, a.address, a.salt, params);
-          return {
-            address: a.address.toBase58(),
-            privateKey: pri.key
-          }
-        })
-        writeFile(__static + '/privateKey.json', JSON.stringify(privateKeys), (err)=>{
-          if(err) throw err;
-          console.log('Complete privateKeys.json')
-        });
+        this.$store.commit()
+      },
+      queryBalance(){
+
       },
       sysPassModalOk(modalId) {
         console.log(modalId)
@@ -185,6 +216,7 @@
           process2.stdin.write('1\n')
       },
       async syncBlock() {
+        console.log('sync node')
         let currentHeight = localStorage.getItem('Current_Height') || 0;
         currentHeight = parseInt(currentHeight)
         const height = (await rest.getBlockHeight()).Result
@@ -199,12 +231,16 @@
               json: block
             }
             DB.dbInsert(DB.blockDB, blockData).then(()=>{}, (err)=>{console.log(err)})
-            if(event) {
-              const eventData = {
-                height: i,
-                json: event 
+            if(event && event.length > 0) {
+              for(const tx of event) {
+                const eventData = {
+                  height: i,
+                  hash: tx['TxHash'],
+                  json: tx 
+                }
+                DB.dbInsert(DB.eventDB, eventData).then(()=>{}, (err)=>{console.log(err)})
               }
-            DB.dbInsert(DB.eventDB, eventData).then(()=>{}, (err)=>{console.log(err)})
+              
             }
             if(block && block.Transactions && block.Transactions.length > 0) {
               console.log(block.Transactions)
@@ -243,89 +279,3 @@
   }
 </script>
 
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body { font-family: 'Source Sans Pro', sans-serif; }
-
-  #wrapper {
-    background:
-      radial-gradient(
-        ellipse at top left,
-        rgba(255, 255, 255, 1) 40%,
-        rgba(229, 229, 229, .9) 100%
-      );
-    height: 100vh;
-    padding: 60px 80px;
-    width: 100vw;
-  }
-
-  #logo {
-    height: auto;
-    margin-bottom: 20px;
-    width: 420px;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-
-  .left-side {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .welcome {
-    color: #555;
-    font-size: 23px;
-    margin-bottom: 10px;
-  }
-
-  .title {
-    color: #2c3e50;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 6px;
-  }
-
-  .title.alt {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  .doc p {
-    color: black;
-    margin-bottom: 10px;
-  }
-
-  .doc button {
-    font-size: .8em;
-    cursor: pointer;
-    outline: none;
-    padding: 0.75em 2em;
-    border-radius: 2em;
-    display: inline-block;
-    color: #fff;
-    background-color: #4fc08d;
-    transition: all 0.15s ease;
-    box-sizing: border-box;
-    border: 1px solid #4fc08d;
-  }
-
-  .doc button.alt {
-    color: #42b983;
-    background-color: transparent;
-  }
-  .link-tab {
-    margin: 10px;
-  }
-</style>

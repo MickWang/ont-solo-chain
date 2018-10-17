@@ -3,25 +3,20 @@
 </style>
 
 <template>
-    <div>
-        <div>
-            <router-link to="/">返回</router-link>
+    <div id="wrapper">
+        <a-table :columns="columns"
+            :rowKey="record => record._id"
+            :dataSource="list"
+            :pagination="pagination"
+            :loading="loading"
+            @change="handleTableChange"
+        >
+        <div slot="action" slot-scope="text, record" class="detail-link" >
+            <a  href="javascript:;" @click="showDetail(record)">详细</a>
         </div>
-        <div>
-            <a-table :columns="columns"
-                :rowKey="record => record._id"
-                :dataSource="list"
-                :pagination="pagination"
-                :loading="loading"
-                @change="handleTableChange"
-            >
-            <div slot="action" slot-scope="text, record" class="detail-link" >
-                <a  href="javascript:;" @click="showDetail(record)">详细</a>
-            </div>
-            </a-table>
-        </div>
-
+        </a-table>
     </div>
+
 </template>
 
 <script>

@@ -3,10 +3,7 @@
 </style>
 
 <template>
-    <div>
-        <div>
-            <router-link to="/">返回</router-link>
-        </div>
+    <div id="wrapper">
         <div>
             <a-table :columns="columns"
                 :rowKey="record => record._id"

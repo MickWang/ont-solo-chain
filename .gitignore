@@ -11,3 +11,4 @@ thumbs.db
 static/Chain/*
 static/Log/*
 static/db/*
+release/

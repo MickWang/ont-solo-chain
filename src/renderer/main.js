@@ -4,11 +4,12 @@ import axios from 'axios'
 import App from './App'
 import router from './router'
 import store from './store'
-import { Button, Modal, message, Table } from 'ant-design-vue';
+import { Button, Modal, message, Table, Icon } from 'ant-design-vue';
 
 Vue.component(Button.name, Button)
 Vue.component(Modal.name, Modal)
 Vue.component(Table.name, Table)
+Vue.component(Icon.name, Icon)
 
 
 Vue.prototype.$message = message
